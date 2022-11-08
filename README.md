@@ -1,10 +1,11 @@
 # ipsec-docker
 Repo contains example of configuring host-to-host ipsec tunnel between two Docker containers.  
-My work is based on [hwdsl2/docker-ipsec-vpn-server](https://github.com/hwdsl2/docker-ipsec-vpn-server) repo. Go check it out!
+My work is based on [hwdsl2/docker-ipsec-vpn-server](https://github.com/hwdsl2/docker-ipsec-vpn-server) repo.  
+Go check it out!
 
 ### Prequisities
-[Install docker-compose](https://docs.docker.com/compose/install/)
-[Install libre-swan](https://libreswan.org/)
+[Install docker-compose](https://docs.docker.com/compose/install/)  
+[Install libre-swan](https://libreswan.org/)  
 [Read libre-swan docs :)](https://libreswan.org/wiki/Host_to_host_VPN)
 
 ### Usage scenario
@@ -61,9 +62,9 @@ $ bash-5.1# ipsec pluto
 ```
 
 #### Results
-Once you run all of the commands you can see what IPSec tunnel looks like from the outside with wireshark.
+Once you run all of the commands you can see what IPSec tunnel looks like from the outside with wireshark.  
+IKE negotiations  
 ![Screenshot](screenshots/IKE.png)
-IKE negotiations
-![Screenshot](screenshots/ESP.png)
 ICMP packet modified into ESP packet - ping the container once tunnel is configured.  
-Data is encrypted. Security Parameters Index and Sequence Number are present.
+Data is encrypted. Security Parameters Index and Sequence Number are present.  
+![Screenshot](screenshots/ESP.png)
